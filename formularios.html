@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario Básico</h2>
+            <form action="">
+                <div class="group">
+                    <label for="input1">Mi primer Formulario</label>
+                    <input type="text" id="input1">
+                </div>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2>Etiquetas de Texto</h2>
+            <form action="">
+                <div class="group">
+                    <p>Input Text</p>
+                    <input type="text" name="input-text" id="input-text">
+                    <label for="input-text">Input de Texto</label>
+                </div>
+                <div class="group">
+                    <p>Area de Texto</p>
+                    <textarea name="" id="" rows="4"></textarea>
+                </div>
+                <div class="group">
+                    <p>Input de Contraseña</p>
+                    <input type="password" name="" id="">
+                </div>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h2>Selectores</h2>
+            <form action="">
+                <p>Select</p>
+                <div class="group">
+                    <select name="" id="">
+                        <option value="pan">Pan</option>
+                        <option value="agua">Agua</option>
+                        <option value="aceite">Aceite</option>
+                        <option value="harina">Harina</option>
+                    </select>
+                </div>
+                <p>Datalist</p>
+                <div class="group">
+                    <input list="lista-deportes">
+                    <datalist id="lista-deportes">
+                        <option>Futbol</option>
+                        <option>Voley</option>
+                        <option>Tenis</option>
+                        <option>Basketball</option>
+                    </datalist>
+                </div>
+                <p>Checkbox</p>
+                <div class="group">
+                    <input type="checkbox" name="vehiculo-1" id="vehiculo-1" value="carro">
+                    <label for="vehiculo-1">Carro</label> <br>
+                    <input type="checkbox" name="vehiculo-2" id="vehiculo-2" value="bicicleta">
+                    <label for="vehiculo-2">Bicicleta</label> <br>
+                    <input type="checkbox" name="vehiculo-3" id="vehiculo-3" value="avion">
+                    <label for="vehiculo-3">Avión</label> <br>
+                    <input type="checkbox" name="vehiculo-4" id="vehiculo-4" value="barco">
+                    <label for="vehiculo-4">Barco</label> <br>
+                </div>
+                <p>Radio Button</p>
+                <div class="group">
+                    <input type="radio" name="lenguajes-programacion" id="dev-1" value="html">
+                    <label for="dev-1">HTML</label> <br>
+                    <input type="radio" name="lenguajes-programacion" id="dev-2" value="css">
+                    <label for="dev-2">CSS</label> <br>
+                    <input type="radio" name="lenguajes-programacion" id="dev-3" value="js">
+                    <label for="dev-3">JS</label> <br>
+                    <input type="radio" name="lenguajes-programacion" id="dev-4" value="php">
+                    <label for="dev-4">PHP</label> <br>
+                </div>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <form action="">
+                <input type="text" value="Bienvenido al Sistema" readonly> <br>
+                <input type="date" name="" id="" disabled> <br>
+                <input type="color" name="" id="" disabled> <br>
+                <input type="email" name="" id="" disabled> <br>
+                <input type="password" name="" id="" required> <br>
+                <input type="submit" class="btn btn-primary" value="Enviar por Input">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button disabled="disabled" class="btn btn-secondary">Esperando</button>
+                <button type="reset" class="btn">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>2022 - Curso de HTML</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
